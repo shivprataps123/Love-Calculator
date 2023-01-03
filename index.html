@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Calculator</title>
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAMAAAALZFNgAAAAaVBMVEX/////AAD/+/v/6Oj/9/f/trb/19f/8/P/U1P/2tr/q6v/oKD/sLD/7+//7Oz/gID/Zmb/mZn/QED/eHj/39//y8v/kZH/wcH/iIj/hIT/ICD/cHD/Njb/Fxf/DAz/S0v/Kyv/X1//WVlUOlzWAAADv0lEQVR4nO2a2ZKqMBCGZYsIgoAsigvq+z/kIR2dcRRMOjQzVaf6u5mqMWl/kt4SXCwYhmEYhmEYhmEYhmEGcJNVtMvCrguvm1h47ufRS69sgmgdVF7ik8pI4+zs9GRx0FT9V+R5no4O9uLdZrPfb7JWTun2ayotbtNJi0W9ev5vE4ihwb6Imu8vFnUop4YNhZYGbBXB8vUDr3pbFXdVea/CMpgeTZWSHKQdJx50ivJlURKRDIwS8CTHapKO4CSN3LyRj13xLNAbG7YGK9u3NTUnguU4jC+rW34r8cb9twS/PY4P0JCDjs3HMV8e7H164GUhLbWD/q2nBh17zahS/Uk/P24yQUkFOgpN7lokoGA55h8PPLDWWgSPB/t6LrUDS2lc/6gNKLnihWQqbvUD3d5NSoOIOJga/InamKNJyPUxbLL3JVSJFhs6kIWcyGSov0p0HgLswGSN01HCJEfnqQphljVTjM0HKnQPZoNXhukbiqezxujw1c40hqMNH3INRjOMELUzrT52UQioOa2RQ925JzNaHQsf0quDSa8xzLgRC7mHIsZJ9gblzoItOoBVWs2phaBiEbjapWMdMbreGBcaGyGY+N3OszU5emvUjB21EHy1afA50IQMHb4qs3bUQjp0QkuP09ruYZIjOsXf26lph6I3BLRGV1QfEJn3ReasLWLRnaPqqVKD3G+1NxNOie/4VhFQ0ac0td0BdhqUm4JwSXx1zYJrWXuEnf5xGluD0JMc0Q8wCrRnNwt7Lm0FVrFr1QUHMJXqKu6ErXdPwOZsaXRA4Q0tN1qdbkj8FTwVfe79IsUXqWFUuZtQugRRNxBi+5A3GpJjxY4g/gICGxFJ37mevKrBhMB9szPBzyqyvCgtna2VVGe6Dku09msivf1seM+ixytslUgdF8sL5yGWoV2KlfFSDL2ysCe38bgdTbj8RL4xwRn1+xP0aVLgDyMuuPOzLJmU7vFE39l3xhVQhhr5ldOD3vcKw2fsd7IlbHhfWV0MwzjHLJ4N7sbksJPcZrjleSXQ35v06zaTl/6g7Jzi46r39XpD+yZ+BDd3TuPVw906LfF1xjhNO5rv06uTzeqlL18XjnRc4jSticJTO9cBPwicjviNhp7Gub2V1XrSe3db0uPrgSmjvusyxD84z265vF1+fVse7J/eT/sh5a0Olvzras6/zFZqjYguahn8jrwTQxJncNWQ6X5UMT+1lFD/9XpIttVihWkhZ8PP3OwP4+WJ6vBr1VbDL5c5hmEYhmEYhmEYhmH+D/4Bg7Mhfqexb/4AAAAASUVORK5CYII=">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Lobster|Montserrat|Raleway" rel="stylesheet">
+</head>
+<body>
+  <div id="love-calculator" class="calculator">
+    <form id="loveForm" id="loveform" class="" action="/" onsubmit="return loveValidation()" method="post">
+      <h1>Welcome <i class="fas fa-heartbeat"></i></h1>
+      <h2 id="lovefinal">Calculate your love score</h2>
+      <p>Please enter names below</p>
+      <h2>Your Name</h2>
+      <input style="border-radius:7px" id="firstname" class="yourname name-box" type="text" name="firstName" placeholder="Your Name"></input>
+      <h2>Lover's Name</h2>
+      <input style="border-radius:7px" id="lovername" class="lovername name-box" type="text" name="lovername" placeholder="Lover's Name"></input>
+    </form>
+    <button id="love-button" onclick="loveCalculator()" class="buttons" type="submit" value="Submit"><i class="fas fa-heart"></i> Submit</button>
+    <button onclick="resetFunction()" class="buttons" type="submit"><i class="fas fa-heart-broken"></i> Reset</button>
+    <footer>
+      <a href="https://linkedin.com/in/shiv-pratap-singh-yadav-252b25236" target="_"><i class="social-media fab fa-1x fa-linkedin"></i></a>
+      <a href="https://github.com/shivprataps123" target="_"><i class="social-media fab fa-1x fa-github"></i></a>
+      <p id="notice">*Note:Take Your Love Percentage From Here </p>
+      <p>© 2023 Radhey-Shiv</p>
+    </footer>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
